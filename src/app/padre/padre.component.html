@@ -1,0 +1,14 @@
+<div class="row">
+    <input type="checkbox" name="" id="">
+    <input type="checkbox" name="" id="">
+    <div class="card m-3 card-animazione" *ngFor="let utente of utenti" style="width: 20rem;">
+        <div class="card-body">
+            <h4 class="card-title text-center">{{utente.name.title}} {{utente.name.first}} {{utente.name.last}}</h4>
+            <img src="{{utente.picture.thumbnail}}" alt="">
+            <p class="card-text"><b>Città di residenza:</b> {{utente.location.city}}</p>
+            <p class="card-text"><b>Email:</b> {{utente.email}}</p>
+            <button class="btn btn-danger" (click)="visualizzaUtente(utente)">Visualizza Dati</button>
+        </div>
+    </div>
+    <figlio [utente]="utente" (mandaDatiAPadre)= "recuperaCellDaFiglio($event)"></figlio>
+</div>
