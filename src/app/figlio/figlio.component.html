@@ -4,7 +4,8 @@
         <p class="card-text">{{utente.email}}</p>
         <p class="card-text">{{utente.gender}}</p>
         <p class="card-text">{{utente.nat}}</p>
-        <p class="card-text">{{utente.phone}}</p>   
+        <p class="card-text" >{{utente.phone}}</p>   
     </div>
-    Inserisci il numero: <input type="text" id="cell">
+    Inserisci il numero: <input type="text" [(ngModel)]="cell">
+    <button class="btn btn-danger" (click)="mandaDati()">Invia Dati</button>
 </div>

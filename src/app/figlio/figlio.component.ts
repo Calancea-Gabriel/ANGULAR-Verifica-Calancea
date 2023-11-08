@@ -14,10 +14,10 @@ export class FiglioComponent {
     console.log(this.utente.dob.age);
   }
 
-  cell: string = '';
+  cell: string = "";
   
   mandaDati(){
-    
+    console.log(this.cell);
     this.mandaDatiAPadre.emit(this.cell);
   }
 }

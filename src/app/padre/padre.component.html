@@ -10,5 +10,7 @@
             <button class="btn btn-danger" (click)="visualizzaUtente(utente)">Visualizza Dati</button>
         </div>
     </div>
+    <input type="text">
+    <p>Il numero recuperato dal figlio: {{cell}}</p>
     <figlio [utente]="utente" (mandaDatiAPadre)= "recuperaCellDaFiglio($event)"></figlio>
 </div>
